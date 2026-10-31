@@ -3,6 +3,7 @@
 (require 'ert)
 (require 'cl-lib)
 (require 'package)
+(defvar quill-palette-overrides)
 (defconst quill-test-root
   (file-name-directory
    (directory-file-name

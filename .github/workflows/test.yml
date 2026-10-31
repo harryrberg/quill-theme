@@ -6,8 +6,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
-        emacs: ['28.2', '29.4', '30.2', '31.1']
+        emacs: ['29.4', '30.2', '31.1']
         modus: ['5.2.0', '5.3.0']
     steps:
       - uses: actions/checkout@v4

@@ -5,7 +5,7 @@
 ;; Maintainer: Harry Berg <https://github.com/harryrberg>
 ;; URL: https://github.com/harryrberg/quill-theme
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "28.1") (modus-themes "5.2.0"))
+;; Package-Requires: ((emacs "29.1") (modus-themes "5.2.0"))
 ;; Keywords: faces, theme
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -38,6 +38,9 @@
                   (name family description background-mode core-palette
                         user-palette overrides-palette &optional
                         custom-faces custom-variables))
+
+(when (< emacs-major-version 29)
+  (error "Quill requires Emacs 29.1 or newer for derivative theme properties"))
 
 (unless (require 'modus-themes nil t)
   (require-theme 'modus-themes))
