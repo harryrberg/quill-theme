@@ -1,6 +1,7 @@
 ;;; preview.el --- Render Quill's own sample buffers -*- lexical-binding: t; -*-
 
 (require 'cl-lib)
+(defvar quill-minimal-ui)
 (defvar quill-preview-root
   (file-name-directory (directory-file-name
                         (file-name-directory load-file-name))))
