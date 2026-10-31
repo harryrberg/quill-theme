@@ -24,7 +24,7 @@ jobs:
         run: >-
           emacs -Q --batch -L .deps/modus-themes -L .
           --eval '(setq byte-compile-error-on-warn t)'
-          -f batch-byte-compile quill-theme.el
+          -f batch-byte-compile quill-theme.el test/quill-theme-tests.el
       - name: ERT integration tests
         run: >-
           emacs -Q --batch -L .deps/modus-themes -L .

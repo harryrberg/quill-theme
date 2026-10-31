@@ -4,6 +4,11 @@
 (require 'cl-lib)
 (require 'package)
 (defvar quill-palette-overrides)
+(defvar modus-themes-vivendi-palette)
+(declare-function modus-themes-get-color-value "modus-themes"
+                  (color &optional with-overrides theme))
+(declare-function modus-themes-get-theme-palette "modus-themes"
+                  (&optional theme with-overrides with-user-palette))
 (defconst quill-test-root
   (file-name-directory
    (directory-file-name
