@@ -6,8 +6,10 @@ and the personal colour scheme shown throughout **[Mastering Emacs](https://www.
 Black background. Violet keywords. Orange-red strings. Lawn-green comments.
 A red cursor and a royal-blue mode line.
 Org code blocks and their begin/end lines share the black buffer background.
+By default, fringes and inactive mode lines are black, with thin grey separators
+and a line above each mode line. The original Mickey-inspired UI is an alternative.
 
-![Quill in Emacs, showing original sample Lisp](docs/preview.png)
+![Quill's default minimal UI in Emacs](docs/preview-minimal.png)
 
 Preview font: **MonoLisa Variable**, 12 pt ([render verification](docs/preview-font.txt)).
 The font is not bundled with the theme.
@@ -70,9 +72,7 @@ cursor shape, line numbers, or editor behaviour.
 
 ## Customize
 
-### Minimal UI variant
-
-![Minimal UI with black fringes, an inactive black mode line, and a one-pixel divider](docs/preview-minimal.png)
+### Minimal UI (default)
 
 `M-x quill-toggle-minimal-ui` switches between the original UI and black
 fringes/inactive mode lines. The active mode line stays blue, inactive text
@@ -81,7 +81,7 @@ draws a thin grey line above both mode lines. The command changes this session
 only and does not activate Quill if you are using another theme.
 
 For Customize, run `M-x customize-group RET quill-theme RET`, set
-**Quill Minimal Ui** to on, and choose **Apply** for this session or
+**Quill Minimal Ui** to on (default) or off (Mickey-inspired alternative), and choose **Apply** for this session or
 **Apply and Save** to persist it. Changes apply immediately when Quill is active.
 You can also use `M-x customize-option RET quill-minimal-ui RET` directly.
 
@@ -108,6 +108,22 @@ Operating-system borders between separate application frames are outside the
 theme's control. Explicit palette overrides take precedence over the preset.
 If your `custom-file` is `null-device`, Customize cannot persist settings;
 put them in `init.org` and tangle instead.
+
+### Mickey-inspired alternative
+
+![Original Mickey-inspired UI with grey fringes](docs/preview.png)
+
+Turn **Quill Minimal Ui** off in Customize, use `M-x quill-toggle-minimal-ui`,
+or set the option before loading:
+
+```elisp
+(setq quill-minimal-ui nil)
+(load-theme 'quill t)
+```
+
+This restores the original grey fringes and grey inactive mode line and removes
+the mode-line overlines. Syntax colours are shared by both variants. This is
+still our unofficial reconstruction, not Mickey's own distributed theme.
 
 ### Palette overrides
 

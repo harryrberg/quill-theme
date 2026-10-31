@@ -4,7 +4,7 @@
 ;; Author: Harry Berg
 ;; Maintainer: Harry Berg <https://github.com/harryrberg>
 ;; URL: https://github.com/harryrberg/quill-theme
-;; Version: 0.2.1
+;; Version: 0.3.0
 ;; Package-Requires: ((emacs "29.1") (modus-themes "5.2.0"))
 ;; Keywords: faces, theme
 ;; SPDX-License-Identifier: GPL-3.0-or-later
@@ -72,10 +72,11 @@ Quill does not inherit the contrast guarantees of the original Modus themes."
   (when (and (fboundp 'quill--apply) (memq 'quill custom-enabled-themes))
     (quill--apply)))
 
-(defcustom quill-minimal-ui nil
+(defcustom quill-minimal-ui t
   "Use black fringes and a black inactive mode line.
 Keep the active mode line blue and window separators visible.
 Draw a thin line above both active and inactive mode lines.
+This is the default.  Set to nil for the original Mickey-inspired UI.
 Changes made through Customize take effect immediately when Quill is active.
 Explicit `quill-palette-overrides' still take precedence.
 

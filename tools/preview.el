@@ -5,6 +5,7 @@
   (file-name-directory (directory-file-name
                         (file-name-directory load-file-name))))
 (add-to-list 'custom-theme-load-path quill-preview-root)
+(setq quill-minimal-ui nil)
 (load-theme 'quill t)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
