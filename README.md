@@ -5,6 +5,7 @@ and the personal colour scheme shown throughout **[Mastering Emacs](https://www.
 
 Black background. Violet keywords. Orange-red strings. Lawn-green comments.
 A red cursor and a royal-blue mode line.
+Org code blocks and their begin/end lines share the black buffer background.
 
 ![Quill in Emacs, showing original sample Lisp](docs/preview.png)
 

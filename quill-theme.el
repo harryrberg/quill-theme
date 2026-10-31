@@ -4,7 +4,7 @@
 ;; Author: Harry Berg
 ;; Maintainer: Harry Berg <https://github.com/harryrberg>
 ;; URL: https://github.com/harryrberg/quill-theme
-;; Version: 0.1.0
+;; Version: 0.1.1
 ;; Package-Requires: ((emacs "29.1") (modus-themes "5.2.0"))
 ;; Keywords: faces, theme
 ;; SPDX-License-Identifier: GPL-3.0-or-later
@@ -142,8 +142,8 @@ Quill does not inherit the contrast guarantees of the original Modus themes."
     (fg-heading-8 quill-gold)
     (fg-prose-code quill-cyan)
     (fg-prose-verbatim quill-gold)
-    (bg-prose-block-contents bg-dim)
-    (bg-prose-block-delimiter bg-dim)
+    (bg-prose-block-contents bg-main)
+    (bg-prose-block-delimiter bg-main)
     (bg-line-number-active bg-main)
     (bg-line-number-inactive bg-main)
     (fg-line-number-active fg-main)

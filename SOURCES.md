@@ -1,6 +1,6 @@
 # Sources and reconstruction notes
 
-Survey date: **2026-10-31**. Package version: **0.1.0**.
+Survey date: **2026-10-31**. Package version: **0.1.1**.
 
 ## Scope and method
 
@@ -75,6 +75,9 @@ over it. Headings, tab styling, completion, search, line numbers, current-line
 background and other unobserved roles include our design choices. Error/diff
 semantics and remaining package faces inherit Modus. This ensures coverage but
 does not make those choices Mickey's settings.
+
+Since 0.1.1, prose/code blocks and their delimiters use the main black background.
+This is a user-requested design choice, not a claim about Mickey's Org settings.
 
 Font, font size, line spacing, cursor shape and window layout are user settings.
 They are deliberately not part of the theme. The package preview uses MonoLisa Variable;
