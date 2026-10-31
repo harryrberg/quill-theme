@@ -4,6 +4,8 @@
 (require 'cl-lib)
 (require 'package)
 (defvar quill-palette-overrides)
+(defvar quill-minimal-ui)
+(declare-function quill-toggle-minimal-ui "quill-theme" (&optional arg))
 (defvar modus-themes-vivendi-palette)
 (declare-function modus-themes-get-color-value "modus-themes"
                   (color &optional with-overrides theme))
@@ -84,5 +86,39 @@
       (should (eq (package-desc-name desc) 'quill-theme))
       (should (equal (cadr (assq 'modus-themes (package-desc-reqs desc)))
                      '(5 2 0))))))
+
+(ert-deftest quill-minimal-ui-customize-and-toggle ()
+  "Customize and the command refresh an active theme and restore defaults."
+  (load-theme 'quill t)
+  (let ((original quill-minimal-ui)
+        (palette (copy-tree quill-palette-overrides)))
+    (unwind-protect
+        (progn
+          (customize-set-variable 'quill-minimal-ui t)
+          (should (equal "#000000" (modus-themes-get-color-value 'fringe t 'quill)))
+          (should (equal "#000000" (modus-themes-get-color-value 'bg-mode-line-inactive t 'quill)))
+          (should (equal "#27408b" (modus-themes-get-color-value 'bg-mode-line-active t 'quill)))
+          (should (equal "#333333" (modus-themes-get-color-value 'border t 'quill)))
+          (quill-toggle-minimal-ui -1)
+          (should-not quill-minimal-ui)
+          (should (equal "#1a1a1a" (modus-themes-get-color-value 'fringe t 'quill)))
+          (should (equal "#333333" (modus-themes-get-color-value 'bg-mode-line-inactive t 'quill)))
+          (should (equal palette quill-palette-overrides))
+          (disable-theme 'quill)
+          (quill-toggle-minimal-ui 1)
+          (should-not (memq 'quill custom-enabled-themes)))
+      (customize-set-variable 'quill-minimal-ui original))))
+
+(ert-deftest quill-minimal-ui-preserves-explicit-overrides ()
+  "The preset must not overwrite a user's explicit palette choices."
+  (load-theme 'quill t)
+  (let ((quill-palette-overrides '((fringe "#102030")))
+        (original quill-minimal-ui))
+    (unwind-protect
+        (progn
+          (customize-set-variable 'quill-minimal-ui t)
+          (should (equal "#102030" (modus-themes-get-color-value 'fringe t 'quill))))
+      (customize-set-variable 'quill-minimal-ui original)))
+  (load-theme 'quill t))
 
 ;;; quill-theme-tests.el ends here

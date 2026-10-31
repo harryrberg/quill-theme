@@ -4,7 +4,7 @@
 ;; Author: Harry Berg
 ;; Maintainer: Harry Berg <https://github.com/harryrberg>
 ;; URL: https://github.com/harryrberg/quill-theme
-;; Version: 0.1.1
+;; Version: 0.2.0
 ;; Package-Requires: ((emacs "29.1") (modus-themes "5.2.0"))
 ;; Keywords: faces, theme
 ;; SPDX-License-Identifier: GPL-3.0-or-later
@@ -38,6 +38,8 @@
                   (name family description background-mode core-palette
                         user-palette overrides-palette &optional
                         custom-faces custom-variables))
+(declare-function modus-themes-get-color-value "modus-themes"
+                  (color &optional with-overrides theme))
 
 (when (< emacs-major-version 29)
   (error "Quill requires Emacs 29.1 or newer for derivative theme properties"))
@@ -63,6 +65,41 @@ For example: ((keyword \"#9580ff\") (bg-region \"#203060\")).
 Quill does not inherit the contrast guarantees of the original Modus themes."
   :group 'quill-theme
   :type '(repeat (list symbol (choice string symbol))))
+
+(defun quill--set-minimal-ui (symbol value)
+  "Set SYMBOL to VALUE and refresh Quill when it is active."
+  (set-default symbol value)
+  (when (and (fboundp 'quill--apply) (memq 'quill custom-enabled-themes))
+    (quill--apply)))
+
+(defcustom quill-minimal-ui nil
+  "Use black fringes and a black inactive mode line.
+Keep the active mode line blue and window separators visible.
+Changes made through Customize take effect immediately when Quill is active.
+Explicit `quill-palette-overrides' still take precedence.
+
+This option changes colours, not divider widths.  For one-pixel dividers,
+set `window-divider-default-right-width' and
+`window-divider-default-bottom-width' to 1, set
+`window-divider-default-places' to t, and enable `window-divider-mode'."
+  :group 'quill-theme
+  :type 'boolean
+  :set #'quill--set-minimal-ui)
+
+;;;###autoload
+(defun quill-toggle-minimal-ui (&optional arg)
+  "Toggle `quill-minimal-ui' for this session.
+With prefix ARG, enable if ARG is positive, otherwise disable.
+Refresh Quill immediately if active; do not activate an inactive theme.
+Use Customize or your init file to make the setting persistent."
+  (interactive "P")
+  (customize-set-variable
+   'quill-minimal-ui
+   (if arg (> (prefix-numeric-value arg) 0) (not quill-minimal-ui)))
+  (when (called-interactively-p 'interactive)
+    (message "Quill minimal UI %s%s"
+             (if quill-minimal-ui "enabled" "disabled")
+             (if (memq 'quill custom-enabled-themes) "" "; load Quill to see it"))))
 
 (defconst quill-palette
   '((bg-main "#000000")
@@ -153,13 +190,33 @@ Core syntax and mode-line colours are grounded in public screenshots.
 Unobserved interfaces use matching choices or the Modus fallback palette.
 See SOURCES.md for the distinction.")
 
-(modus-themes-theme
- 'quill 'quill-theme
- "Unofficial dark theme inspired by Mickey Petersen's Mastering Emacs."
- 'dark
- 'modus-themes-vivendi-palette
- 'quill-palette
- 'quill-palette-overrides)
+(defvar quill--effective-palette nil
+  "Quill palette with the selected UI variant applied.")
+
+(defun quill--apply ()
+  "Define or refresh Quill using its current options."
+  (setq quill--effective-palette
+        (append (when quill-minimal-ui
+                  '((fringe bg-main)
+                    (bg-mode-line-inactive bg-main)))
+                quill-palette))
+  (modus-themes-theme
+   'quill 'quill-theme
+   "Unofficial dark theme inspired by Mickey Petersen's Mastering Emacs."
+   'dark
+   'modus-themes-vivendi-palette
+   'quill--effective-palette
+   'quill-palette-overrides)
+  (when quill-minimal-ui
+    (let ((border (modus-themes-get-color-value 'border t 'quill)))
+      (custom-theme-set-faces
+       'quill
+       `(window-divider-first-pixel
+         ((((class color) (min-colors 256)) :foreground ,border)))
+       `(window-divider-last-pixel
+         ((((class color) (min-colors 256)) :foreground ,border)))))))
+
+(quill--apply)
 
 ;;;###autoload
 (when load-file-name

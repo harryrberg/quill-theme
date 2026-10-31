@@ -70,6 +70,46 @@ cursor shape, line numbers, or editor behaviour.
 
 ## Customize
 
+### Minimal UI variant
+
+![Minimal UI with black fringes, an inactive black mode line, and a one-pixel divider](docs/preview-minimal.png)
+
+`M-x quill-toggle-minimal-ui` switches between the original UI and black
+fringes/inactive mode lines. The active mode line stays blue, inactive text
+remains readable, and window separator lines stay visible. The command changes
+this session only and does not activate Quill if you are using another theme.
+
+For Customize, run `M-x customize-group RET quill-theme RET`, set
+**Quill Minimal Ui** to on, and choose **Apply** for this session or
+**Apply and Save** to persist it. Changes apply immediately when Quill is active.
+You can also use `M-x customize-option RET quill-minimal-ui RET` directly.
+
+For an init file (or an `init.org` source block):
+
+```elisp
+(setq quill-minimal-ui t)
+(load-theme 'quill t)
+```
+
+The theme changes separator colours, not window geometry. For the thinnest
+GUI separators, add the following. In Customize, the equivalent options are
+under `M-x customize-group RET window-divider RET`.
+
+```elisp
+(setq window-divider-default-right-width 1
+      window-divider-default-bottom-width 1
+      window-divider-default-places t)
+(window-divider-mode 1)
+```
+
+These are one-pixel separators between **Emacs windows inside a frame**.
+Operating-system borders between separate application frames are outside the
+theme's control. Explicit palette overrides take precedence over the preset.
+If your `custom-file` is `null-device`, Customize cannot persist settings;
+put them in `init.org` and tangle instead.
+
+### Palette overrides
+
 Quill follows Modus styling options. Its own palette overrides take precedence
 over `modus-themes-common-palette-overrides`. Set overrides before loading,
 or reload after changing them:
