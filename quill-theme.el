@@ -199,15 +199,15 @@ See SOURCES.md for the distinction.")
     `(mode-line
       ((default :inherit modus-themes-ui-variable-pitch
                 :background ,bg-mode-line-active :foreground ,fg-mode-line-active
-                :overline ,border :box nil)))
+                :overline ,border :underline nil :box nil)))
     `(mode-line-active
       ((default :inherit modus-themes-ui-variable-pitch
                 :background ,bg-mode-line-active :foreground ,fg-mode-line-active
-                :overline ,border :box nil)))
+                :overline ,border :underline nil :box nil)))
     `(mode-line-inactive
       ((default :inherit modus-themes-ui-variable-pitch
                 :background ,bg-mode-line-inactive :foreground ,fg-mode-line-inactive
-                :overline ,border :box nil))))
+                :overline ,border :underline nil :box nil))))
   "Visible divider edges and thin mode-line overlines for the minimal UI.")
 
 (defun quill--apply ()

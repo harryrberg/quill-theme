@@ -80,7 +80,7 @@ cursor shape, line numbers, or editor behaviour.
 `M-x quill-toggle-minimal-ui` switches between the original UI and black
 fringes/inactive mode lines. The active mode line stays blue, inactive text
 remains readable, and window separator lines stay visible. The variant also
-draws a thin grey line above both mode lines. The command changes this session
+draws a thin grey line above both mode lines, without an underline. The command changes this session
 only and does not activate Quill if you are using another theme.
 
 For Customize, run `M-x customize-group RET quill-theme RET`, set
@@ -101,12 +101,15 @@ under `M-x customize-group RET window-divider RET`.
 
 ```elisp
 (setq window-divider-default-right-width 1
-      window-divider-default-bottom-width 1
-      window-divider-default-places t)
+      window-divider-default-bottom-width 0
+      window-divider-default-places 'right-only)
 (window-divider-mode 1)
 ```
 
-These are one-pixel separators between **Emacs windows inside a frame**.
+These are one-pixel vertical separators between **Emacs windows inside a frame**.
+The mode-line overline separates stacked windows; no extra line is drawn below
+the mode line. To add bottom separators, set `window-divider-default-bottom-width`
+to `1` and `window-divider-default-places` to `t`, then re-enable the mode.
 Operating-system borders between separate application frames are outside the
 theme's control. Explicit palette overrides take precedence over the preset.
 If your `custom-file` is `null-device`, Customize cannot persist settings;
