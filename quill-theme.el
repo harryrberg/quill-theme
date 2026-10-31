@@ -34,12 +34,12 @@
 
 ;;; Code:
 
+(require 'seq)
+(defvar modus-themes-faces)
 (declare-function modus-themes-theme "modus-themes"
                   (name family description background-mode core-palette
                         user-palette overrides-palette &optional
                         custom-faces custom-variables))
-(declare-function modus-themes-get-color-value "modus-themes"
-                  (color &optional with-overrides theme))
 
 (when (< emacs-major-version 29)
   (error "Quill requires Emacs 29.1 or newer for derivative theme properties"))
@@ -193,6 +193,11 @@ See SOURCES.md for the distinction.")
 (defvar quill--effective-palette nil
   "Quill palette with the selected UI variant applied.")
 
+(defconst quill--minimal-divider-faces
+  '(`(window-divider-first-pixel ((,c :foreground ,border)))
+    `(window-divider-last-pixel ((,c :foreground ,border))))
+  "Face definitions for visible divider edge pixels.")
+
 (defun quill--apply ()
   "Define or refresh Quill using its current options."
   (setq quill--effective-palette
@@ -200,21 +205,24 @@ See SOURCES.md for the distinction.")
                   '((fringe bg-main)
                     (bg-mode-line-inactive bg-main)))
                 quill-palette))
-  (modus-themes-theme
-   'quill 'quill-theme
-   "Unofficial dark theme inspired by Mickey Petersen's Mastering Emacs."
-   'dark
-   'modus-themes-vivendi-palette
-   'quill--effective-palette
-   'quill-palette-overrides)
-  (when quill-minimal-ui
-    (let ((border (modus-themes-get-color-value 'border t 'quill)))
-      (custom-theme-set-faces
-       'quill
-       `(window-divider-first-pixel
-         ((((class color) (min-colors 256)) :foreground ,border)))
-       `(window-divider-last-pixel
-         ((((class color) (min-colors 256)) :foreground ,border)))))))
+  ;; Avoid duplicate face definitions: deferred theme loading and a live
+  ;; Customize refresh can otherwise give different precedence to them.
+  (let ((modus-themes-faces
+         (if quill-minimal-ui
+             (seq-remove
+              (lambda (spec)
+                (memq (car (cadr spec))
+                      '(window-divider-first-pixel window-divider-last-pixel)))
+              modus-themes-faces)
+           modus-themes-faces)))
+    (modus-themes-theme
+     'quill 'quill-theme
+     "Unofficial dark theme inspired by Mickey Petersen's Mastering Emacs."
+     'dark
+     'modus-themes-vivendi-palette
+     'quill--effective-palette
+     'quill-palette-overrides
+     (when quill-minimal-ui 'quill--minimal-divider-faces))))
 
 (quill--apply)
 
