@@ -4,7 +4,7 @@
 ;; Author: Harry Berg
 ;; Maintainer: Harry Berg <https://github.com/harryrberg>
 ;; URL: https://github.com/harryrberg/quill-theme
-;; Version: 0.2.0
+;; Version: 0.2.1
 ;; Package-Requires: ((emacs "29.1") (modus-themes "5.2.0"))
 ;; Keywords: faces, theme
 ;; SPDX-License-Identifier: GPL-3.0-or-later
@@ -75,6 +75,7 @@ Quill does not inherit the contrast guarantees of the original Modus themes."
 (defcustom quill-minimal-ui nil
   "Use black fringes and a black inactive mode line.
 Keep the active mode line blue and window separators visible.
+Draw a thin line above both active and inactive mode lines.
 Changes made through Customize take effect immediately when Quill is active.
 Explicit `quill-palette-overrides' still take precedence.
 
@@ -193,10 +194,22 @@ See SOURCES.md for the distinction.")
 (defvar quill--effective-palette nil
   "Quill palette with the selected UI variant applied.")
 
-(defconst quill--minimal-divider-faces
+(defconst quill--minimal-ui-faces
   '(`(window-divider-first-pixel ((,c :foreground ,border)))
-    `(window-divider-last-pixel ((,c :foreground ,border))))
-  "Face definitions for visible divider edge pixels.")
+    `(window-divider-last-pixel ((,c :foreground ,border)))
+    `(mode-line
+      ((default :inherit modus-themes-ui-variable-pitch
+                :background ,bg-mode-line-active :foreground ,fg-mode-line-active
+                :overline ,border :box nil)))
+    `(mode-line-active
+      ((default :inherit modus-themes-ui-variable-pitch
+                :background ,bg-mode-line-active :foreground ,fg-mode-line-active
+                :overline ,border :box nil)))
+    `(mode-line-inactive
+      ((default :inherit modus-themes-ui-variable-pitch
+                :background ,bg-mode-line-inactive :foreground ,fg-mode-line-inactive
+                :overline ,border :box nil))))
+  "Visible divider edges and thin mode-line overlines for the minimal UI.")
 
 (defun quill--apply ()
   "Define or refresh Quill using its current options."
@@ -212,7 +225,8 @@ See SOURCES.md for the distinction.")
              (seq-remove
               (lambda (spec)
                 (memq (car (cadr spec))
-                      '(window-divider-first-pixel window-divider-last-pixel)))
+                      '(window-divider-first-pixel window-divider-last-pixel
+                        mode-line mode-line-active mode-line-inactive)))
               modus-themes-faces)
            modus-themes-faces)))
     (modus-themes-theme
@@ -222,7 +236,7 @@ See SOURCES.md for the distinction.")
      'modus-themes-vivendi-palette
      'quill--effective-palette
      'quill-palette-overrides
-     (when quill-minimal-ui 'quill--minimal-divider-faces))))
+     (when quill-minimal-ui 'quill--minimal-ui-faces))))
 
 (quill--apply)
 

@@ -76,8 +76,9 @@ cursor shape, line numbers, or editor behaviour.
 
 `M-x quill-toggle-minimal-ui` switches between the original UI and black
 fringes/inactive mode lines. The active mode line stays blue, inactive text
-remains readable, and window separator lines stay visible. The command changes
-this session only and does not activate Quill if you are using another theme.
+remains readable, and window separator lines stay visible. The variant also
+draws a thin grey line above both mode lines. The command changes this session
+only and does not activate Quill if you are using another theme.
 
 For Customize, run `M-x customize-group RET quill-theme RET`, set
 **Quill Minimal Ui** to on, and choose **Apply** for this session or

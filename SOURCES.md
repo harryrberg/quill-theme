@@ -1,6 +1,6 @@
 # Sources and reconstruction notes
 
-Survey date: **2026-10-31**. Package version: **0.2.0**.
+Survey date: **2026-10-31**. Package version: **0.2.1**.
 
 ## Scope and method
 
@@ -82,6 +82,7 @@ This is a user-requested design choice, not a claim about Mickey's Org settings.
 Version 0.2.0 adds the optional `quill-minimal-ui` preset: black fringes and
 inactive mode lines, with visible divider edge pixels. This is also a user-requested
 variant; the default UI continues to follow the original reconstruction.
+Version 0.2.1 adds thin overlines above both mode lines in this preset.
 
 Font, font size, line spacing, cursor shape and window layout are user settings.
 They are deliberately not part of the theme. The package preview uses MonoLisa Variable;
