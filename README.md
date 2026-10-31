@@ -25,8 +25,8 @@ Harry Berg maintains this package. The face implementation comes from
 
 ## Requirements
 
-- Emacs **29.1 or later** (the derivative-theme interface uses theme properties
-  that do not work correctly in Emacs 28).
+- Emacs **28.1 or later**. Quill registers its palette metadata explicitly on
+  Emacs 28 for compatibility with the Modus derivative-theme interface.
 - Modus Themes **5.2.0 or later**. Older bundled versions are insufficient;
   install or upgrade `modus-themes` from GNU ELPA and restart Emacs if needed.
 
@@ -56,7 +56,7 @@ Then put this in your init file:
 (load-theme 'quill t)
 ```
 
-### Single-file package (Emacs 29+)
+### Single-file package (Emacs 28+)
 
 Download [`quill-theme.el`](quill-theme.el), run `M-x package-install-file`,
 select the file, and then run `M-x load-theme RET quill RET`.

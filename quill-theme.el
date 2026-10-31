@@ -5,8 +5,8 @@
 ;; Assisted-by: Codex:GPT-6
 ;; Maintainer: Harry Berg <https://github.com/harryrberg>
 ;; URL: https://github.com/harryrberg/quill-theme
-;; Version: 0.3.0
-;; Package-Requires: ((emacs "29.1") (modus-themes "5.2.0"))
+;; Version: 0.4.0
+;; Package-Requires: ((emacs "28.1") (modus-themes "5.2.0"))
 ;; Keywords: faces, theme
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -41,9 +41,6 @@
                   (name family description background-mode core-palette
                         user-palette overrides-palette &optional
                         custom-faces custom-variables))
-
-(when (< emacs-major-version 29)
-  (error "Quill requires Emacs 29.1 or newer for derivative theme properties"))
 
 (unless (require 'modus-themes nil t)
   (require-theme 'modus-themes))
@@ -215,6 +212,16 @@ See SOURCES.md for the distinction.")
 
 (defun quill--apply ()
   "Define or refresh Quill using its current options."
+  ;; Emacs 28 accepts but ignores custom-declare-theme's properties argument.
+  ;; Store Quill's metadata explicitly so Modus can resolve its palettes.
+  (when (< emacs-major-version 29)
+    (put 'quill 'theme-properties
+         '(:kind color-scheme :background-mode dark :family quill-theme
+           :modus-core-palette modus-themes-vivendi-palette
+           :modus-user-palette quill--effective-palette
+           :modus-overrides-palette quill-palette-overrides
+           :modus-documentation
+           "Unofficial dark theme inspired by Mickey Petersen's Mastering Emacs.")))
   (setq quill--effective-palette
         (append (when quill-minimal-ui
                   '((fringe bg-main)
