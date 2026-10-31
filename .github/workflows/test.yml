@@ -1,0 +1,30 @@
+name: Test
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        emacs: ['28.2', '29.4', '30.2', '31.1']
+        modus: ['5.2.0', '5.3.0']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: purcell/setup-emacs@master
+        with:
+          version: ${{ matrix.emacs }}
+      - uses: actions/checkout@v4
+        with:
+          repository: protesilaos/modus-themes
+          ref: ${{ matrix.modus }}
+          path: .deps/modus-themes
+      - name: Byte compile without warnings
+        run: >-
+          emacs -Q --batch -L .deps/modus-themes -L .
+          --eval '(setq byte-compile-error-on-warn t)'
+          -f batch-byte-compile quill-theme.el
+      - name: ERT integration tests
+        run: >-
+          emacs -Q --batch -L .deps/modus-themes -L .
+          -l test/quill-theme-tests.el -f ert-run-tests-batch-and-exit

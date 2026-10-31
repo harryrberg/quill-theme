@@ -1,0 +1,1668 @@
+{
+  "survey_date": "2026-10-31",
+  "discovery": [
+    "https://www.masteringemacs.org/all-articles",
+    "https://www.masteringemacs.org/sitemap.xml"
+  ],
+  "articles": [
+    "https://www.masteringemacs.org/article/announcing-my-new-mastering-emacs-book",
+    "https://www.masteringemacs.org/article/bad-emacs-advice",
+    "https://www.masteringemacs.org/article/beginners-guide-to-emacs",
+    "https://www.masteringemacs.org/article/belated-first-anniversary",
+    "https://www.masteringemacs.org/article/combobulate-bulk-editing-treesitter-nodes-multiple-cursors",
+    "https://www.masteringemacs.org/article/combobulate-editing-searching-new-query-builder",
+    "https://www.masteringemacs.org/article/combobulate-interactive-node-editing-treesitter",
+    "https://www.masteringemacs.org/article/combobulate-intuitive-structured-navigation-treesitter",
+    "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter",
+    "https://www.masteringemacs.org/article/comint-writing-command-interpreter",
+    "https://www.masteringemacs.org/article/compiling-running-scripts-emacs",
+    "https://www.masteringemacs.org/article/complete-guide-mastering-eshell",
+    "https://www.masteringemacs.org/article/converting-tabs-whitespace",
+    "https://www.masteringemacs.org/article/correcting-typos-misspellings-abbrev",
+    "https://www.masteringemacs.org/article/demystifying-emacs-window-manager",
+    "https://www.masteringemacs.org/article/diacritics-in-emacs",
+    "https://www.masteringemacs.org/article/dired-shell-commands-find-xargs-replacement",
+    "https://www.masteringemacs.org/article/dirswitchel-fish-shellstyle-directory-switcher-shellmode",
+    "https://www.masteringemacs.org/article/disabling-prompts-emacs",
+    "https://www.masteringemacs.org/article/discoverel-discover-emacs-context-menus",
+    "https://www.masteringemacs.org/article/displaying-interacting-processes-proced",
+    "https://www.masteringemacs.org/article/effective-editing-movement",
+    "https://www.masteringemacs.org/article/emacs-builtin-elisp-cheat-sheet",
+    "https://www.masteringemacs.org/article/emacs-chat-sacha-chua",
+    "https://www.masteringemacs.org/article/emacss-switch-to-git",
+    "https://www.masteringemacs.org/article/evaluating-elisp-emacs",
+    "https://www.masteringemacs.org/article/evaluating-lisp-forms-regular-expressions",
+    "https://www.masteringemacs.org/article/executing-shell-commands-emacs",
+    "https://www.masteringemacs.org/article/find-files-faster-recent-files-package",
+    "https://www.masteringemacs.org/article/find-nearest-colors-emacs-24",
+    "https://www.masteringemacs.org/article/fixing-mark-commands-transient-mark-mode",
+    "https://www.masteringemacs.org/article/four-year-anniversary-new-website",
+    "https://www.masteringemacs.org/article/full-text-searching-info-mode-apropos",
+    "https://www.masteringemacs.org/article/fun-emacs-calc",
+    "https://www.masteringemacs.org/article/fun-games-in-emacs",
+    "https://www.masteringemacs.org/article/fun-vimgolf-3-swapping-words-sorting",
+    "https://www.masteringemacs.org/article/fun-vimgolf-4-transpositioning-text-tables",
+    "https://www.masteringemacs.org/article/fun-with-vimgolf-1-alphabetize-directory",
+    "https://www.masteringemacs.org/article/fun-with-vimgolf-2-sum-your-vimgolf-rank",
+    "https://www.masteringemacs.org/article/fuzzy-finding-emacs-instead-of-fzf",
+    "https://www.masteringemacs.org/article/hiding-replacing-modeline-strings",
+    "https://www.masteringemacs.org/article/highlighting-by-word-line-regexp",
+    "https://www.masteringemacs.org/article/how-to-get-started-tree-sitter",
+    "https://www.masteringemacs.org/article/how-to-write-a-book-in-emacs",
+    "https://www.masteringemacs.org/article/iedit-interactive-multi-occurrence-editing-in-your-buffer",
+    "https://www.masteringemacs.org/article/improving-performance-emacs-display-engine",
+    "https://www.masteringemacs.org/article/inserting-emoji-input-methods",
+    "https://www.masteringemacs.org/article/introduction-magit-emacs-mode-git",
+    "https://www.masteringemacs.org/article/introduction-to-ido-mode",
+    "https://www.masteringemacs.org/article/jedi-completion-library-python",
+    "https://www.masteringemacs.org/article/keeping-secrets-in-emacs-gnupg-auth-sources",
+    "https://www.masteringemacs.org/article/keyboard-macros-are-misunderstood",
+    "https://www.masteringemacs.org/article/keyboard-shortcuts-every-command-line-hacker-should-know-about-gnu-readline",
+    "https://www.masteringemacs.org/article/lets-write-a-treesitter-major-mode",
+    "https://www.masteringemacs.org/article/making-camelcase-readable-glasses-mode",
+    "https://www.masteringemacs.org/article/making-deleted-files-trash-can",
+    "https://www.masteringemacs.org/article/making-tooltips-appear-in-echo-area",
+    "https://www.masteringemacs.org/article/mark-buffer-not-modified",
+    "https://www.masteringemacs.org/article/mastering-emacs-now-available-in-japanese",
+    "https://www.masteringemacs.org/article/mastering-key-bindings-emacs",
+    "https://www.masteringemacs.org/article/maximizing-emacs-startup",
+    "https://www.masteringemacs.org/article/my-ebook-mastering-emacs-now-out",
+    "https://www.masteringemacs.org/article/my-emacs-keybindings",
+    "https://www.masteringemacs.org/article/network-utilities-emacs",
+    "https://www.masteringemacs.org/article/new-python-mode",
+    "https://www.masteringemacs.org/article/one-year-anniversary-of-my-book-mastering-emacs",
+    "https://www.masteringemacs.org/article/pcomplete-context-sensitive-completion-emacs",
+    "https://www.masteringemacs.org/article/polymode-multiple-major-modes-how-to-use-sql-python-in-one-buffer",
+    "https://www.masteringemacs.org/article/re-builder-interactive-regexp-builder",
+    "https://www.masteringemacs.org/article/removing-blank-lines-buffer",
+    "https://www.masteringemacs.org/article/repeating-commands-emacs",
+    "https://www.masteringemacs.org/article/replacing-tmux-gnu-screen-emacs",
+    "https://www.masteringemacs.org/article/running-shells-in-emacs-overview",
+    "https://www.masteringemacs.org/article/script-files-executable-automatically",
+    "https://www.masteringemacs.org/article/seamlessly-merge-multiple-documentation-sources-eldoc",
+    "https://www.masteringemacs.org/article/searching-buffers-occur-mode",
+    "https://www.masteringemacs.org/article/securely-generating-totp-tokens-emacs",
+    "https://www.masteringemacs.org/article/shell-comint-secrets-history-commands",
+    "https://www.masteringemacs.org/article/signed-twitter",
+    "https://www.masteringemacs.org/article/smart-scan-jump-symbols-buffer",
+    "https://www.masteringemacs.org/article/sorting-text-line-field-regexp-emacs",
+    "https://www.masteringemacs.org/article/speed-up-emacs-libjansson-native-elisp-compilation",
+    "https://www.masteringemacs.org/article/spotlight-flycheck-a-flymake-replacement",
+    "https://www.masteringemacs.org/article/spotlight-use-package-a-declarative-configuration-tool",
+    "https://www.masteringemacs.org/article/swapping-quote-symbols-emacs-parsepartialsexp",
+    "https://www.masteringemacs.org/article/switching-from-vim-to-emacs",
+    "https://www.masteringemacs.org/article/text-expansion-hippie-expand",
+    "https://www.masteringemacs.org/article/the-emacs-27-edition-of-mastering-emacs-out-now",
+    "https://www.masteringemacs.org/article/the-emacs-28-edition-of-mastering-emacs-out-now",
+    "https://www.masteringemacs.org/article/the-emacs-29-edition-of-mastering-emacs-out-now",
+    "https://www.masteringemacs.org/article/thoughts-on-mechanical-keyboards-zsa-moonlander",
+    "https://www.masteringemacs.org/article/toggling-python-buffers",
+    "https://www.masteringemacs.org/article/tree-sitter-complications-of-parsing-languages",
+    "https://www.masteringemacs.org/article/understanding-minibuffer-completion",
+    "https://www.masteringemacs.org/article/unicode-ligatures-color-emoji",
+    "https://www.masteringemacs.org/article/wdired-editable-dired-buffers",
+    "https://www.masteringemacs.org/article/what-is-new-in-emacs-24-part-1",
+    "https://www.masteringemacs.org/article/what-is-new-in-emacs-24-part-2",
+    "https://www.masteringemacs.org/article/what-new-in-magit-2x",
+    "https://www.masteringemacs.org/article/whats-new-emacs-23-3",
+    "https://www.masteringemacs.org/article/whats-new-emacs-24-3",
+    "https://www.masteringemacs.org/article/whats-new-in-emacs-24-4",
+    "https://www.masteringemacs.org/article/whats-new-in-emacs-25-1",
+    "https://www.masteringemacs.org/article/whats-new-in-emacs-26-1",
+    "https://www.masteringemacs.org/article/whats-new-in-emacs-27-1",
+    "https://www.masteringemacs.org/article/whats-new-in-emacs-28-1",
+    "https://www.masteringemacs.org/article/whats-new-in-emacs-29-1",
+    "https://www.masteringemacs.org/article/whats-new-in-emacs-301",
+    "https://www.masteringemacs.org/article/whats-new-in-emacs-311",
+    "https://www.masteringemacs.org/article/which-function-mode",
+    "https://www.masteringemacs.org/article/why-emacs-has-buffers",
+    "https://www.masteringemacs.org/article/wordsmithing-in-emacs",
+    "https://www.masteringemacs.org/article/working-coding-systems-unicode-emacs",
+    "https://www.masteringemacs.org/article/working-multiple-files-dired"
+  ],
+  "article_errors": [],
+  "assets": [
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/bookish-gnu.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/beginners-guide-to-emacs"
+      ],
+      "format": "jpg",
+      "sha256": "d40854b09cfca270eae22a479b001d14d3fa6357b9ccd56b4e7d3814deff914a",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/maze-structure-1.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-bulk-editing-treesitter-nodes-multiple-cursors",
+        "https://www.masteringemacs.org/article/combobulate-interactive-node-editing-treesitter"
+      ],
+      "format": "jpg",
+      "sha256": "1a9e59637a30534a51b2f058a795563adfb850cef980021436d62bb25ab67a55",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-field-editor-rename.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-bulk-editing-treesitter-nodes-multiple-cursors"
+      ],
+      "format": "gif",
+      "sha256": "98fbf0833bca97626e8e30ce76e147d440f15655e95f3b66060aca7372b2ab86",
+      "width": 895,
+      "height": 702,
+      "frames": 17,
+      "samples": [
+        0,
+        8,
+        16
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-query-matches-all-keys.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-bulk-editing-treesitter-nodes-multiple-cursors"
+      ],
+      "format": "png",
+      "sha256": "34d39aec1178c0c2271d06bcc4533aa42f86c5ceef2a34a3e1573a92518c00e4",
+      "width": 837,
+      "height": 645,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-query-edit-shorthand.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-bulk-editing-treesitter-nodes-multiple-cursors"
+      ],
+      "format": "gif",
+      "sha256": "be21839c28852fc5532c724f15776f8230b61fadf555766c845f05200270f30b",
+      "width": 895,
+      "height": 588,
+      "frames": 21,
+      "samples": [
+        0,
+        10,
+        20
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-expand-edit.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-bulk-editing-treesitter-nodes-multiple-cursors"
+      ],
+      "format": "gif",
+      "sha256": "ac832bc343dc428569b7f63115518ceec80da24bb3db90b1176684ff5a900c92",
+      "width": 895,
+      "height": 450,
+      "frames": 52,
+      "samples": [
+        0,
+        26,
+        51
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-field-number.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-bulk-editing-treesitter-nodes-multiple-cursors"
+      ],
+      "format": "gif",
+      "sha256": "09bcad937358d50d6cc411dc3f11f9c8bd46ab41fa9712544713159087402f1a",
+      "width": 895,
+      "height": 702,
+      "frames": 10,
+      "samples": [
+        0,
+        5,
+        9
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-field-editor-eval-form.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-bulk-editing-treesitter-nodes-multiple-cursors"
+      ],
+      "format": "gif",
+      "sha256": "a0c5810c5d94bc8b379e503071d1be858b80e38d75c3c3c6d2122c51d4b34028",
+      "width": 817,
+      "height": 394,
+      "frames": 21,
+      "samples": [
+        0,
+        10,
+        20
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/poplar-trees.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-bulk-editing-treesitter-nodes-multiple-cursors",
+        "https://www.masteringemacs.org/article/combobulate-interactive-node-editing-treesitter",
+        "https://www.masteringemacs.org/article/combobulate-intuitive-structured-navigation-treesitter"
+      ],
+      "format": "jpg",
+      "sha256": "68636a9f2a66ce19ab826d529df4799a61dc31b10a2eb68e284a880bb96be1a7",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/worldtree-painterly.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-editing-searching-new-query-builder",
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter"
+      ],
+      "format": "jpg",
+      "sha256": "e5e557e26beed4aa42aee2705d237609144de8a9224af1350fffaca7e7f1480d",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-query-builder.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-editing-searching-new-query-builder",
+        "https://www.masteringemacs.org/article/combobulate-intuitive-structured-navigation-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "812a8e52ce916bef540922e21b0d23290594cfd27f01be1159503848c589abc0",
+      "width": 1090,
+      "height": 814,
+      "frames": 39,
+      "samples": [
+        0,
+        19,
+        38
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-query-builder-popup.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-editing-searching-new-query-builder"
+      ],
+      "format": "svg",
+      "sha256": "ce9e88c977412bee2160462860b52845dc09b8630c8a33b80680303ab36ed46e"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-highlight-implicit-tuple.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-editing-searching-new-query-builder"
+      ],
+      "format": "svg",
+      "sha256": "252a71c11ae67e5531d4cfd94bdcbca4a675f7a5564db737883d6896b3c82235"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-xref.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-editing-searching-new-query-builder"
+      ],
+      "format": "svg",
+      "sha256": "64241147d80225dc3519985086d89a4231a3d74d9f2b64f1d1f66112315cc0aa"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/combobulate-vintage-2.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-editing-searching-new-query-builder",
+        "https://www.masteringemacs.org/article/combobulate-intuitive-structured-navigation-treesitter"
+      ],
+      "format": "jpg",
+      "sha256": "2febec4d91dd36ae07514bc6ba074b2e7b61d76290957542f2b3b9efc7a905c8",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-python-indent.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-interactive-node-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "187b5c3c575324c52848e15ef566706c2b25d565ba2fc7848b44188238207eed",
+      "width": 1181,
+      "height": 786,
+      "frames": 9,
+      "samples": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-expand-region.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-interactive-node-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "0e28a86b11401576ce7f7d73326dde308da43c313aeb8c2bc92e5bb7026ed5d4",
+      "width": 882,
+      "height": 672,
+      "frames": 13,
+      "samples": [
+        0,
+        6,
+        12
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-splice-go.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-interactive-node-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "c807214916504cfb288519358fd62f998d5aff084b929ecf25cebc718a25a488",
+      "width": 1038,
+      "height": 674,
+      "frames": 7,
+      "samples": [
+        0,
+        3,
+        6
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-clone-dwim.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-interactive-node-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "41f32740e6decc7c2be9237f5c0036207ab95218c6544837dafee730e96b220c",
+      "width": 1181,
+      "height": 786,
+      "frames": 9,
+      "samples": [
+        0,
+        4,
+        8
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/navigation/tsx-nav-down-and-sibling-slow.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-intuitive-structured-navigation-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "b6208be772d235c365de8a5da560b5c400e50b171f39bd9a7d353022c3391188",
+      "width": 947,
+      "height": 702,
+      "frames": 14,
+      "samples": [
+        0,
+        7,
+        13
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/navigation/down-into-jsx.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-intuitive-structured-navigation-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "2106526422b5b369add9d0f72b18834260f438063d0dd800461b41953b00fb78",
+      "width": 947,
+      "height": 702,
+      "frames": 4,
+      "samples": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/navigation/down-into-jsx-attributes.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-intuitive-structured-navigation-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "993246aed7e5fb7b13e98b6745c017ca2b72c0f9521f07ace79aab3eb5008808",
+      "width": 947,
+      "height": 702,
+      "frames": 7,
+      "samples": [
+        0,
+        3,
+        6
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/navigation/json-sibling-nav-value.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-intuitive-structured-navigation-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "f40cbab5991ba7154c05973d92bc0a1afef337d0b5b88237dd6d014d88ff3297",
+      "width": 999,
+      "height": 702,
+      "frames": 23,
+      "samples": [
+        0,
+        11,
+        22
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/curly-wurly-bonsai.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter",
+        "https://www.masteringemacs.org/article/tree-sitter-complications-of-parsing-languages"
+      ],
+      "format": "jpg",
+      "sha256": "ad234b02f152bf4f1063fcebb8a4b757f66ae8c85b6a2b7bebd016d67fd71f60",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter"
+      ],
+      "format": "png",
+      "sha256": "6f3939f9b359e3cfe19d5157ad28bc5c0bd618d447dda82af88b67b849be5922",
+      "width": 1318,
+      "height": 869,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/vanish-splice-up-jsx.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "a444b86b909c9b9e7028c4caa912d62f6e0dc6b94f4e7ce6dd84b2b1afcc7aaf",
+      "width": 921,
+      "height": 618,
+      "frames": 11,
+      "samples": [
+        0,
+        5,
+        10
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/splice-up-python.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "b21f013a954059680891e9d838f2c69bb84ffa9f699a9479f59859f913a316d7",
+      "width": 921,
+      "height": 618,
+      "frames": 16,
+      "samples": [
+        0,
+        8,
+        15
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/drag-complex.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "73f7139865813c2b3d4768707d0be7ed9d76420ae86818a92b72a1a5df8ec304",
+      "width": 921,
+      "height": 618,
+      "frames": 15,
+      "samples": [
+        0,
+        7,
+        14
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/mc-edit-1.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "f945847cf1bb5ba3b0a081fc79bc9a00835d48ef5ef785525be88e7b00573405",
+      "width": 921,
+      "height": 618,
+      "frames": 55,
+      "samples": [
+        0,
+        27,
+        54
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/clone-dwim.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "782995e66ef9bf9c16e7896f30199cd3732a431fed216c24b1a0afd10a820d4c",
+      "width": 921,
+      "height": 618,
+      "frames": 13,
+      "samples": [
+        0,
+        6,
+        12
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/enveloping.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "b0cd4bdc5d9487a8194ccc3422d5d7f6d6f4d1474989285420e1cb685c6960bf",
+      "width": 921,
+      "height": 618,
+      "frames": 47,
+      "samples": [
+        0,
+        23,
+        46
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/python-indentation.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "687b8c4f0e1df27d5af8c7655200251482147cab0cf06c87dab37799dda25182",
+      "width": 921,
+      "height": 618,
+      "frames": 6,
+      "samples": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/backward-up-list.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "e704070b215ef128625799d6116773e09e29ae65fa9bcb2c932a2ef0187eecbd",
+      "width": 973,
+      "height": 758,
+      "frames": 5,
+      "samples": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/down-and-sibling-movement.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "95b7411948c948103794bd2168b7947c4b82ed76692ce133c4348567e5ee7bd0",
+      "width": 908,
+      "height": 702,
+      "frames": 13,
+      "samples": [
+        0,
+        6,
+        12
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/sibling-nav-jsx.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter"
+      ],
+      "format": "gif",
+      "sha256": "94b945b91409e33e990f98348de6e782b1b1906031b4635dd9ce4f665d97e74c",
+      "width": 921,
+      "height": 618,
+      "frames": 11,
+      "samples": [
+        0,
+        5,
+        10
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/expand-region.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/combobulate-structured-movement-editing-treesitter",
+        "https://www.masteringemacs.org/article/how-to-get-started-tree-sitter",
+        "https://www.masteringemacs.org/article/whats-new-in-emacs-29-1"
+      ],
+      "format": "gif",
+      "sha256": "ebe3e112dd6d5dea904a4cf43992d451e87f251a0e415f1a684fd37c1a3fcd66",
+      "width": 973,
+      "height": 756,
+      "frames": 6,
+      "samples": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/monitor.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/comint-writing-command-interpreter"
+      ],
+      "format": "jpg",
+      "sha256": "260f38d2011ddb6ffe26a00de0be16381b48ae90b9bb5e5d1f1221418fbc9d50",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/complex-machine.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/compiling-running-scripts-emacs"
+      ],
+      "format": "jpg",
+      "sha256": "f2d028e6a9f2574178dfbc4eac8baec4c68cf5f0fe07f196eb5f4bb19477c2ff",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/vintage-computer.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/complete-guide-mastering-eshell"
+      ],
+      "format": "jpg",
+      "sha256": "b9d703fc6d3917a43a8bdf79b80c4b2dd9eb2454af8087c1807a95bda0215cd0",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/eshell.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/complete-guide-mastering-eshell"
+      ],
+      "format": "svg",
+      "sha256": "a4b8f966f139442d28b006586b03bed0668bcf119041c321ea9079b7aae3393b"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/stained-glass-gnu.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/demystifying-emacs-window-manager"
+      ],
+      "format": "jpg",
+      "sha256": "dc08b04717043f16a74b58fa0b566ba3b8d5b0d4b43809ae8f5f5531d66c530e",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/elfeed.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/demystifying-emacs-window-manager"
+      ],
+      "format": "png",
+      "sha256": "f8b11432feacab73d387bd2b04e951e20d507b16fdfc043d9d6e25b1ba9ad211",
+      "width": 1089,
+      "height": 905,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/shell.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/dired-shell-commands-find-xargs-replacement"
+      ],
+      "format": "jpg",
+      "sha256": "6cf810f6fe19bbc5a72c07e2e3f6dbd777315a8331e2559bfe7556c856cc597c",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/Occur@home_010.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/discoverel-discover-emacs-context-menus"
+      ],
+      "format": "png",
+      "sha256": "cdb4abdd60762035228da9c912a833a14ddb166bf9802d5a2fd3d503d3a00b21",
+      "width": 852,
+      "height": 690,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/clockwork-gnu.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/effective-editing-movement"
+      ],
+      "format": "jpg",
+      "sha256": "2168de88c670343d22c2dbefba4f5068f963c5dfe9b0ad08a95accc05669d39f",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/shortdoc.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/emacs-builtin-elisp-cheat-sheet"
+      ],
+      "format": "svg",
+      "sha256": "b863f5b34e3f6d43a1e0f219147b6e5593e483991ede897c3ec9d91fd0904b19"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/starry-gnu-book.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/evaluating-elisp-emacs"
+      ],
+      "format": "jpg",
+      "sha256": "62e89e9ac41755f73f3b11ab5da43d05e32cf5a2fb3dfeb3284cb58afaa4f4df",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/ielm.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/evaluating-elisp-emacs"
+      ],
+      "format": "svg",
+      "sha256": "3d87bc3d5d09fb9bb2542a4d116444cc9748df3dd290885d3460047c430909da"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/retro-futuristic-computer.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/executing-shell-commands-emacs"
+      ],
+      "format": "jpg",
+      "sha256": "cb4345d308659923f278ed9673f61d88c8b566dfa42d532eb1220b773527aeb4",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/bookish-gnu-alt.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/full-text-searching-info-mode-apropos"
+      ],
+      "format": "jpg",
+      "sha256": "e9738863796df5b9803e0b7bdf6b0f41bd119a8d5c438625d5f4db9c28d1aba4",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/complex-computer.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/fun-emacs-calc"
+      ],
+      "format": "jpg",
+      "sha256": "2ae025d15fafe66e621ccde3ddeb5d959bb9f3383655c1ec963a4705efb05aaf",
+      "width": 1664,
+      "height": 1664,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/hanoi.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/fun-games-in-emacs"
+      ],
+      "format": "png",
+      "sha256": "fb0043ac1c345a118d25981dfc7738870a95f9d76756254068e2bf3a4ba123f2",
+      "width": 434,
+      "height": 385,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/5x5.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/fun-games-in-emacs"
+      ],
+      "format": "png",
+      "sha256": "611d8a95948bed529af03ba3f3fb6b5cca7b9248bbcfcb7ad37e14c40419c806",
+      "width": 422,
+      "height": 490,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/bubbles.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/fun-games-in-emacs"
+      ],
+      "format": "png",
+      "sha256": "bb9421ca5414ae5262fb42be9ca465362657a0ebdfd88b1d632819b7c52e3604",
+      "width": 842,
+      "height": 721,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/test-cipher.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/fun-games-in-emacs"
+      ],
+      "format": "png",
+      "sha256": "cc08cbac254e44ebfe6521a05b36c3234b5ff9b4735a4b597cf9667f32be677d",
+      "width": 1010,
+      "height": 280,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/doctor.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/fun-games-in-emacs"
+      ],
+      "format": "png",
+      "sha256": "b066944f6bbf5e63ee5764cef0b186e05212ac74713d2a95001019b7f245ae26",
+      "width": 686,
+      "height": 280,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/gomoku.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/fun-games-in-emacs"
+      ],
+      "format": "png",
+      "sha256": "479afa23d625ccb4b17223f39949dd5f64c152fa0ce3617cab8acb8636f578a2",
+      "width": 686,
+      "height": 511,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/tetris.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/fun-games-in-emacs"
+      ],
+      "format": "png",
+      "sha256": "2cc4460475912488edb1f61ae8a9e9d66e1fef5f83e62e457b279614324101eb",
+      "width": 458,
+      "height": 595,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/solitaire.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/fun-games-in-emacs"
+      ],
+      "format": "png",
+      "sha256": "b1341b78e5769652c18af1c89a77b052b362045e1fadaa1e8a0f1ab2cd760a2a",
+      "width": 650,
+      "height": 595,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/mpuz.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/fun-games-in-emacs"
+      ],
+      "format": "png",
+      "sha256": "4669aec1a49227d7973a15e69775c0e4d81bce2f1ae6df742acbc0203315216e",
+      "width": 854,
+      "height": 385,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/gnu-standing-on-piles-of-paper.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/fuzzy-finding-emacs-instead-of-fzf"
+      ],
+      "format": "jpg",
+      "sha256": "039b8cdc8525e83035b3e66926492d9ab37110dfe847b8a925b103fe13c81da7",
+      "width": 1250,
+      "height": 996,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/fzf.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/fuzzy-finding-emacs-instead-of-fzf"
+      ],
+      "format": "png",
+      "sha256": "7b7f1e3554e742e3fd15194284f77d16ef3b62ee361f70579f1507529ef2db04",
+      "width": 546,
+      "height": 533,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/ezf-example-optimised.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/fuzzy-finding-emacs-instead-of-fzf"
+      ],
+      "format": "gif",
+      "sha256": "0535b9364346d54f2a41bd3b1b38a074f9b7c1c42792b013902aba6a8bc95b2d",
+      "width": 777,
+      "height": 576,
+      "frames": 145,
+      "samples": [
+        0,
+        72,
+        144
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/ezf-default.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/fuzzy-finding-emacs-instead-of-fzf"
+      ],
+      "format": "svg",
+      "sha256": "4dd48084a95935714ed21aaf43ef581a91e9bd76c102c2062a43695e847cc546"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/bonsai_water_colour.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/how-to-get-started-tree-sitter"
+      ],
+      "format": "png",
+      "sha256": "b9714db15abe4655967f4370d96beb8b219cb29131e49402e1a98d88d1e6c2dc",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate/combobulate-example.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/how-to-get-started-tree-sitter"
+      ],
+      "format": "gif",
+      "sha256": "d31261da320c357f8598438f5624ce1d648bebf1079332989924bd725223606d",
+      "width": 1025,
+      "height": 590,
+      "frames": 91,
+      "samples": [
+        0,
+        45,
+        90
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/learning-tower-of-learning-2.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/how-to-write-a-book-in-emacs"
+      ],
+      "format": "jpg",
+      "sha256": "45b395a29864053d138eed7db7d9f9f245a04ac573cc6611961a026eb42c3087",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/ediff.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/how-to-write-a-book-in-emacs"
+      ],
+      "format": "png",
+      "sha256": "0e0814ad0f4526f3e1fc8888d2431af89a33656fb3d67494539c45bf6f9e5212",
+      "width": 1182,
+      "height": 795,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "http://www.masteringemacs.org/static/uploads/iedit.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/iedit-interactive-multi-occurrence-editing-in-your-buffer"
+      ],
+      "format": "png",
+      "sha256": "293af7bbed811dd972e42a0085cb72c39384abafe7be6ec58cdfc1d8e3679701",
+      "width": 772,
+      "height": 514,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/smiley.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/inserting-emoji-input-methods"
+      ],
+      "format": "jpg",
+      "sha256": "5affdbce2da5f0c4c77b9c15a023ae09ca540b68e28abf9539efd35a00bec93f",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/very-complex-computer-terminal.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/introduction-magit-emacs-mode-git"
+      ],
+      "format": "jpg",
+      "sha256": "f4f5c931260e1c4ced71b18b57e7f21561698e8dcdd8aaaf29854eb416473fe3",
+      "width": 1664,
+      "height": 1664,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/magit-status.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/introduction-magit-emacs-mode-git"
+      ],
+      "format": "svg",
+      "sha256": "090dc8e8b0841949e6fec14533f8f5cbc825a4bc442acdcb5d8376a20ac23283"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/magit-diff-hunk.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/introduction-magit-emacs-mode-git"
+      ],
+      "format": "svg",
+      "sha256": "160bc275f0a2ed23b1bdeaebf05a5409f1c3e0b3550430d53b1ef15398f6e8a7"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/magit-commit-view.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/introduction-magit-emacs-mode-git"
+      ],
+      "format": "svg",
+      "sha256": "7d9ec50ce68179edda78da59a151a4a5cfc84b46db16e4688df0a4ce4d7227fd"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/magit-log-view.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/introduction-magit-emacs-mode-git"
+      ],
+      "format": "svg",
+      "sha256": "a2825ea9fe452f5da579e79968e5b5519b75f9a759785a3633f90d3f07e9d654"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/magit-log-mode.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/introduction-magit-emacs-mode-git"
+      ],
+      "format": "svg",
+      "sha256": "176492a6a613d81242f320de9196e631f63d1d6da51ac8583e5919173b6af044"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/magit-branches.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/introduction-magit-emacs-mode-git"
+      ],
+      "format": "svg",
+      "sha256": "a9d2dd60b3a37fd52db02ee7a123c169f5d206103c101f184223ca8d1811b377"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/magit-trace.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/introduction-magit-emacs-mode-git"
+      ],
+      "format": "svg",
+      "sha256": "8e2bae92fe057afcd393aa0f060982bd09ccfb558a1b8b78fb0463f8d260fa8b"
+    },
+    {
+      "url": "http://www.masteringemacs.org/static/uploads/Screenshot-at-2013-01-07-101353.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/jedi-completion-library-python"
+      ],
+      "format": "png",
+      "sha256": "6b646b867240f7bd96709b01749c57be4b6cff04a419ce3cb38baca33283a9bf",
+      "width": 752,
+      "height": 360,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/padlock-2.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/keeping-secrets-in-emacs-gnupg-auth-sources"
+      ],
+      "format": "jpg",
+      "sha256": "d18f70820f82d13817ee979dd6e3f815ecaef1653ac24e2b23dd25b883889ccc",
+      "width": 1664,
+      "height": 1664,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/city-of-pianos.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/keyboard-macros-are-misunderstood",
+        "https://www.masteringemacs.org/article/mastering-key-bindings-emacs"
+      ],
+      "format": "jpg",
+      "sha256": "0e1f04158fd356de04a68044e7aa14cbb7b9aec10e664df6eb3a5ce79a1580ca",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/aztec-gnu-monitor.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/keyboard-shortcuts-every-command-line-hacker-should-know-about-gnu-readline"
+      ],
+      "format": "jpg",
+      "sha256": "aad6f056b8cdd48c0a9665fefe46aded6055a70f42c44ec1848f6b8eff4a5c97",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/readline-colors.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/keyboard-shortcuts-every-command-line-hacker-should-know-about-gnu-readline"
+      ],
+      "format": "png",
+      "sha256": "e1b6a23eb7c2a673f9187023247b54d03cbaba2d63b90536588e6fa8fdf5a16f",
+      "width": 810,
+      "height": 293,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/technicolor-tree.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/lets-write-a-treesitter-major-mode"
+      ],
+      "format": "jpg",
+      "sha256": "a5c2773815fa60e31ddfee2cc591ddb886d9b4ced01b1352861a019d5560fb6a",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/html-ts-mode.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/lets-write-a-treesitter-major-mode"
+      ],
+      "format": "svg",
+      "sha256": "4ce68193d1e379a7ec2e827259f9165aeb0cb2b51e86760bbed97c2a664e1928"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate-query-builder-example.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/lets-write-a-treesitter-major-mode"
+      ],
+      "format": "svg",
+      "sha256": "f9a03759bb3bb20d102fd7704c0e47d7c35d4f5babc86c0707c1f335174bd1dc"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/wires.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/network-utilities-emacs"
+      ],
+      "format": "jpg",
+      "sha256": "7817e875cf0ba805ac9d6aa9a099bc3afe25c148de19dc5579608b743c5d9913",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/Screenshot-of-Polymode.png",
+      "articles": [
+        "https://www.masteringemacs.org/article/polymode-multiple-major-modes-how-to-use-sql-python-in-one-buffer"
+      ],
+      "format": "png",
+      "sha256": "1bc520b1eb96d78feecae60c338678e71acecfc28730ac6406ead745a3ed50a3",
+      "width": 745,
+      "height": 500,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/gnu-mirror-tarot.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/repeating-commands-emacs"
+      ],
+      "format": "jpg",
+      "sha256": "5b055c1c80635c5817cfcaf7dd8e0d9ec47192af37b130082b02eb5923cf6d12",
+      "width": 1664,
+      "height": 1664,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/multi-screen-thingy.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/replacing-tmux-gnu-screen-emacs"
+      ],
+      "format": "jpg",
+      "sha256": "c114e88e18091a63edd28b1db92986a28ce68edef908ee0001fd98714dc87118",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/complex-computer-terminal.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/running-shells-in-emacs-overview"
+      ],
+      "format": "jpg",
+      "sha256": "2ae025d15fafe66e621ccde3ddeb5d959bb9f3383655c1ec963a4705efb05aaf",
+      "width": 1664,
+      "height": 1664,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/gnu-standing-on-a-clown-sized-pile-of-books.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/seamlessly-merge-multiple-documentation-sources-eldoc"
+      ],
+      "format": "jpg",
+      "sha256": "f51368ffc06cf146484b510097670c9da456c98fa4bf6ac614575c67e2f6b2b1",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/magnifying-glass.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/searching-buffers-occur-mode"
+      ],
+      "format": "jpg",
+      "sha256": "1051abd210ff836d913f42901da89f4f3cfcfbe845bb76bf6b05ee10f56d1abf",
+      "width": 918,
+      "height": 966,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/occur-mode.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/searching-buffers-occur-mode"
+      ],
+      "format": "svg",
+      "sha256": "4c7fe815f8b8830f45140b7ba3ace4a210e4b8325143d8f353d14dca4cd0bcd5"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/clock-face-padlock-2.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/securely-generating-totp-tokens-emacs"
+      ],
+      "format": "jpg",
+      "sha256": "86727f6616e7e29f59a2d092f94fe8ac20fd6a1ee70e90acbcc9be805054ef26",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/totp-example.gif",
+      "articles": [
+        "https://www.masteringemacs.org/article/securely-generating-totp-tokens-emacs"
+      ],
+      "format": "gif",
+      "sha256": "3031c4f0dd356f3c708078d47533a0927d03a8ea56146ed12254822cc11020df",
+      "width": 750,
+      "height": 492,
+      "frames": 47,
+      "samples": [
+        0,
+        23,
+        46
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/totp.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/securely-generating-totp-tokens-emacs"
+      ],
+      "format": "svg",
+      "sha256": "a55aca2ae4e083059c0fbc53c85a4bd794ff593f91e93342dee18e8a695d9962"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/speedy-gnuzales.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/speed-up-emacs-libjansson-native-elisp-compilation"
+      ],
+      "format": "jpg",
+      "sha256": "18221c5375f761a69f3eecaec8eb2f772ee213bbf10c65e63ed0537bd4b90b91",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/isometric-cubic-gnu.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/spotlight-use-package-a-declarative-configuration-tool"
+      ],
+      "format": "jpg",
+      "sha256": "4a9b3db512ffe4c8ebbd931cd1cec1c17171e75c5b49fd06e5f995abb28baadf",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/vim-emacs-crossroad.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/switching-from-vim-to-emacs"
+      ],
+      "format": "jpg",
+      "sha256": "8df13029262df5170f5c2deda99f5a44edec1bdf03110dbd21b551b7dec12837",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/hippie-gnu.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/text-expansion-hippie-expand"
+      ],
+      "format": "jpg",
+      "sha256": "6c8bbdb941b3362d288da39f05fc6e4ac604575af09f7d01d131799dc7264a67",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/monochrome_gnu.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/the-emacs-29-edition-of-mastering-emacs-out-now",
+        "https://www.masteringemacs.org/article/whats-new-in-emacs-311"
+      ],
+      "format": "jpg",
+      "sha256": "d2acefc6ee5c4840c5fe6de0848eb6d53edf49cffb2e8609c7dd90025f2ce4f6",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/keyboard-warrior-gnu.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/thoughts-on-mechanical-keyboards-zsa-moonlander"
+      ],
+      "format": "jpg",
+      "sha256": "71cd8005b89e0e1dfe2ce3ed055831ad5dc5d0af2c25115a298fe64d2dc2cdf3",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/gold-fern-like-tree.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/tree-sitter-complications-of-parsing-languages"
+      ],
+      "format": "jpg",
+      "sha256": "ea8cd715ca17fd140be90b55e2b36cbe131a6c5c3902df4adf88c8eaf07b637d",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/combobulate-navigate.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/tree-sitter-complications-of-parsing-languages"
+      ],
+      "format": "svg",
+      "sha256": "56b87fbfd031d53c365643366d639ae8f15fac1607aa37d51a2fcdcc491e022c"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/engine-machine.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/understanding-minibuffer-completion"
+      ],
+      "format": "jpg",
+      "sha256": "77f6824765ade5d482958e1da93366dcc12aa1905804b79cf334ce46c2e6cb63",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/cascadia-code-full.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/unicode-ligatures-color-emoji"
+      ],
+      "format": "svg",
+      "sha256": "f39f3eb709a97efa60888fde5ced8f40a6cfdf536c9a55107f410907244f9bef"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/cascadia-example.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/unicode-ligatures-color-emoji"
+      ],
+      "format": "svg",
+      "sha256": "976b76125c09c93f7181ff3f54d232bc0c262c5819f1655292e63458b7da53d4"
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/card-catalog.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/wdired-editable-dired-buffers",
+        "https://www.masteringemacs.org/article/working-multiple-files-dired"
+      ],
+      "format": "jpg",
+      "sha256": "9edcf9cb3acb1503e7ec00d9c036ae21ed89c1f4131fb44b7e156d250080d3c8",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/purple-gnu.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/whats-new-in-emacs-29-1",
+        "https://www.masteringemacs.org/article/whats-new-in-emacs-301"
+      ],
+      "format": "jpg",
+      "sha256": "8c14321781e8fada4e44f0e44d5e5525e8fa7b14bdbaedf3a84d314ec83cd992",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/piped-machine.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/why-emacs-has-buffers"
+      ],
+      "format": "jpg",
+      "sha256": "1e74b3f46e0f75db76471e0a696bf8005f204582a73f086cea11cd44aa51fcad",
+      "width": 1024,
+      "height": 1024,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/article-images/leaning-tower-of-learning.jpg",
+      "articles": [
+        "https://www.masteringemacs.org/article/wordsmithing-in-emacs"
+      ],
+      "format": "jpg",
+      "sha256": "9affc0a6cf55fe6ac5eed823da33d4341d15c0079b06601ddae12a4eef55699f",
+      "width": 2048,
+      "height": 2048,
+      "frames": 1,
+      "samples": [
+        0
+      ]
+    },
+    {
+      "url": "https://www.masteringemacs.org/static/uploads/dictionary.svg",
+      "articles": [
+        "https://www.masteringemacs.org/article/wordsmithing-in-emacs"
+      ],
+      "format": "svg",
+      "sha256": "3c1aa7836d2e729de0f27327b6ddf050aa052b219e2677338fe787e14cc3c56d"
+    }
+  ],
+  "external_video": {
+    "url": "https://www.youtube.com/watch?v=JA4dqmDFt5Y",
+    "sample_seconds": [
+      60,
+      180,
+      360,
+      540,
+      720,
+      900,
+      1080,
+      1260,
+      1440,
+      1620,
+      1800,
+      1980,
+      2160,
+      2340,
+      2520,
+      2700,
+      2880,
+      3060
+    ]
+  }
+}

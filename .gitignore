@@ -1,0 +1,5 @@
+*.elc
+.research/
+.deps/
+dist/
+__pycache__/
