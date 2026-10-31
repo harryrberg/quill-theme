@@ -64,11 +64,6 @@
                     (format "Resolved families: %S\n" families))))
         (unless (w32-export-frame nil (expand-file-name "docs/bytecode-vm-minimal.png" quill-preview-root) 'png)
           (error "Default preview export failed"))
-        (customize-set-variable 'quill-minimal-ui nil)
-        (redisplay t)
-        (sit-for 0.5)
-        (unless (w32-export-frame nil (expand-file-name "docs/bytecode-vm-mickey.png" quill-preview-root) 'png)
-          (error "Alternative preview export failed"))
         (with-temp-file (expand-file-name ".research/gui-check.txt" quill-preview-root)
           (dolist (face '(default font-lock-keyword-face font-lock-string-face
                          font-lock-comment-face font-lock-function-name-face

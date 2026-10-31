@@ -114,8 +114,6 @@ put them in `init.org` and tangle instead.
 
 ### Mickey-inspired alternative
 
-![Mickey-inspired alternative showing the same Lisp virtual machine](docs/bytecode-vm-mickey.png)
-
 Turn **Quill Minimal Ui** off in Customize, use `M-x quill-toggle-minimal-ui`,
 or set the option before loading:
 
@@ -185,7 +183,7 @@ When Emacs bundles Modus 5.2+, omit `-L /path/to/modus-themes`.
 The tests exercise loading/disabling/reloading, palette resolution and overrides,
 upstream palette isolation, face coverage, and package metadata.
 
-`tools/preview.el` creates both single-window bytecode VM previews in a separate Windows Emacs 31 GUI process
+`tools/preview.el` creates the default single-window bytecode VM preview in a separate Windows Emacs 31 GUI process
 using `w32-export-frame`, then exits. It does not load your init file.
 `tools/research.py` refreshes the local source cache using Python, requests,
 BeautifulSoup4 and Pillow; `tools/render-references.py` renders cached SVGs
