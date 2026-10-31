@@ -9,7 +9,7 @@ Org code blocks and their begin/end lines share the black buffer background.
 By default, fringes and inactive mode lines are black, with thin grey separators
 and a line above each mode line. The original Mickey-inspired UI is an alternative.
 
-![Quill's default UI showing a Lisp perceptron in one Emacs window](docs/preview-minimal.png)
+![Quill's default UI showing a Lisp perceptron in one Emacs window](docs/perceptron-minimal.png)
 
 Preview font: **MonoLisa Variable**, 12 pt ([render verification](docs/preview-font.txt)).
 The font is not bundled with the theme.
@@ -112,7 +112,7 @@ put them in `init.org` and tangle instead.
 
 ### Mickey-inspired alternative
 
-![Mickey-inspired alternative showing the same Lisp perceptron](docs/preview.png)
+![Mickey-inspired alternative showing the same Lisp perceptron](docs/perceptron-mickey.png)
 
 Turn **Quill Minimal Ui** off in Customize, use `M-x quill-toggle-minimal-ui`,
 or set the option before loading:

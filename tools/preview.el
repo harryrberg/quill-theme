@@ -59,12 +59,12 @@
                     "Verified with Emacs font-at for every non-space, non-newline\n"
                     "character in the displayed sample buffer before frame export.\n"
                     (format "Resolved families: %S\n" families))))
-        (unless (w32-export-frame nil (expand-file-name "docs/preview-minimal.png" quill-preview-root) 'png)
+        (unless (w32-export-frame nil (expand-file-name "docs/perceptron-minimal.png" quill-preview-root) 'png)
           (error "Default preview export failed"))
         (customize-set-variable 'quill-minimal-ui nil)
         (redisplay t)
         (sit-for 0.5)
-        (unless (w32-export-frame nil (expand-file-name "docs/preview.png" quill-preview-root) 'png)
+        (unless (w32-export-frame nil (expand-file-name "docs/perceptron-mickey.png" quill-preview-root) 'png)
           (error "Alternative preview export failed"))
         (with-temp-file (expand-file-name ".research/gui-check.txt" quill-preview-root)
           (dolist (face '(default font-lock-keyword-face font-lock-string-face
