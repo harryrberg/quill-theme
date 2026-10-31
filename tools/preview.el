@@ -6,7 +6,7 @@
   (file-name-directory (directory-file-name
                         (file-name-directory load-file-name))))
 (add-to-list 'custom-theme-load-path quill-preview-root)
-(setq quill-minimal-ui nil)
+(setq quill-minimal-ui t)
 (load-theme 'quill t)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
@@ -24,35 +24,18 @@
           (error "Preview requires the installed MonoLisa Variable font"))
         (set-frame-font (font-spec :family "MonoLisa Variable" :size 12.0
                                   :weight 'normal) nil t)
-        (switch-to-buffer (get-buffer-create "quill-demo.el"))
+        (delete-other-windows)
+        (switch-to-buffer (get-buffer-create "perceptron.el"))
         (erase-buffer)
-        (insert ";;; Quill - inspired by Mickey Petersen / Mastering Emacs\n\n"
-                ";; A black canvas, a blue mode line, and familiar colours.\n"
-                "(require 'cl-lib)\n\n"
-                "(defgroup notebook nil\n"
-                "  \"A small place to collect useful ideas.\"\n"
-                "  :group 'applications)\n\n"
-                "(defcustom notebook-directory \"~/notes/\"\n"
-                "  \"Directory in which to keep your notes.\"\n"
-                "  :type 'directory)\n\n"
-                "(defun notebook-find (title)\n"
-                "  \"Open the note identified by TITLE.\"\n"
-                "  (interactive \"sNote title: \")\n"
-                "  (let ((path (expand-file-name\n"
-                "               (concat title \".org\") notebook-directory)))\n"
-                "    ;; Keep the original text close at hand.\n"
-                "    (unless (file-directory-p notebook-directory)\n"
-                "      (make-directory notebook-directory t))\n"
-                "    (find-file path)\n"
-                "    (message \"Opened %s\" title)))\n\n"
-                "(provide 'notebook)\n")
+        (insert-file-contents
+         (expand-file-name "examples/perceptron.el" quill-preview-root))
         (emacs-lisp-mode)
         (font-lock-ensure)
         (setq-local mode-line-format
                     '("  Quill   " mode-line-buffer-identification
                       "     " mode-name "     %l:%c     Mickey-inspired / Modus-powered"))
         (goto-char (point-min))
-        (forward-line 13)
+        (forward-line 4)
         (make-frame-visible)
         (message " ")
         (redisplay t)
@@ -76,8 +59,13 @@
                     "Verified with Emacs font-at for every non-space, non-newline\n"
                     "character in the displayed sample buffer before frame export.\n"
                     (format "Resolved families: %S\n" families))))
+        (unless (w32-export-frame nil (expand-file-name "docs/preview-minimal.png" quill-preview-root) 'png)
+          (error "Default preview export failed"))
+        (customize-set-variable 'quill-minimal-ui nil)
+        (redisplay t)
+        (sit-for 0.5)
         (unless (w32-export-frame nil (expand-file-name "docs/preview.png" quill-preview-root) 'png)
-          (error "Frame export failed"))
+          (error "Alternative preview export failed"))
         (with-temp-file (expand-file-name ".research/gui-check.txt" quill-preview-root)
           (dolist (face '(default font-lock-keyword-face font-lock-string-face
                          font-lock-comment-face font-lock-function-name-face

@@ -9,10 +9,11 @@ Org code blocks and their begin/end lines share the black buffer background.
 By default, fringes and inactive mode lines are black, with thin grey separators
 and a line above each mode line. The original Mickey-inspired UI is an alternative.
 
-![Quill's default minimal UI in Emacs](docs/preview-minimal.png)
+![Quill's default UI showing a Lisp perceptron in one Emacs window](docs/preview-minimal.png)
 
 Preview font: **MonoLisa Variable**, 12 pt ([render verification](docs/preview-font.txt)).
 The font is not bundled with the theme.
+Example code: [a perceptron learning an AND gate](examples/perceptron.el).
 
 The name **Quill** honours Mickey's work as a writer and teacher. This is an
 **unofficial, independently implemented theme**, not Mickey's configuration or
@@ -111,7 +112,7 @@ put them in `init.org` and tangle instead.
 
 ### Mickey-inspired alternative
 
-![Original Mickey-inspired UI with grey fringes](docs/preview.png)
+![Mickey-inspired alternative showing the same Lisp perceptron](docs/preview.png)
 
 Turn **Quill Minimal Ui** off in Customize, use `M-x quill-toggle-minimal-ui`,
 or set the option before loading:
@@ -182,7 +183,7 @@ When Emacs bundles Modus 5.2+, omit `-L /path/to/modus-themes`.
 The tests exercise loading/disabling/reloading, palette resolution and overrides,
 upstream palette isolation, face coverage, and package metadata.
 
-`tools/preview.el` creates the preview in a separate Windows Emacs 31 GUI process
+`tools/preview.el` creates both single-window perceptron previews in a separate Windows Emacs 31 GUI process
 using `w32-export-frame`, then exits. It does not load your init file.
 `tools/research.py` refreshes the local source cache using Python, requests,
 BeautifulSoup4 and Pillow; `tools/render-references.py` renders cached SVGs
