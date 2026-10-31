@@ -1,7 +1,8 @@
-;;; quill-theme.el --- A Mastering Emacs inspired dark theme -*- lexical-binding: t; -*-
+;;; quill-theme.el --- A dark theme inspired by Mickey Petersen -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2026 Harry Berg
 ;; Author: Harry Berg
+;; Assisted-by: Codex:GPT-6
 ;; Maintainer: Harry Berg <https://github.com/harryrberg>
 ;; URL: https://github.com/harryrberg/quill-theme
 ;; Version: 0.3.0
@@ -241,9 +242,10 @@ See SOURCES.md for the distinction.")
 
 (quill--apply)
 
+(provide-theme 'quill)
+
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path (file-name-directory load-file-name)))
 
-(provide 'quill-theme)
 ;;; quill-theme.el ends here
