@@ -8,6 +8,9 @@ A red cursor and a royal-blue mode line.
 
 ![Quill in Emacs, showing original sample Lisp](docs/preview.png)
 
+Preview font: **MonoLisa Variable**, 12 pt ([render verification](docs/preview-font.txt)).
+The font is not bundled with the theme.
+
 The name **Quill** honours Mickey's work as a writer and teacher. This is an
 **unofficial, independently implemented theme**, not Mickey's configuration or
 an endorsed Mastering Emacs product. Mickey is credited for the visual inspiration;

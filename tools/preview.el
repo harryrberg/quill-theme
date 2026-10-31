@@ -10,7 +10,6 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (blink-cursor-mode -1)
-(set-frame-font "Consolas-12" nil t)
 (set-frame-parameter nil 'undecorated t)
 (set-frame-size (selected-frame) 112 35)
 (set-frame-position (selected-frame) 80 80)
@@ -19,6 +18,10 @@
   "Export a genuine Emacs GUI frame containing original sample code."
   (condition-case err
       (progn
+        (unless (member "MonoLisa Variable" (font-family-list))
+          (error "Preview requires the installed MonoLisa Variable font"))
+        (set-frame-font (font-spec :family "MonoLisa Variable" :size 12.0
+                                  :weight 'normal) nil t)
         (switch-to-buffer (get-buffer-create "quill-demo.el"))
         (erase-buffer)
         (insert ";;; Quill - inspired by Mickey Petersen / Mastering Emacs\n\n"
@@ -53,6 +56,24 @@
         (redisplay t)
         (sit-for 1)
         (make-directory (expand-file-name "docs" quill-preview-root) t)
+        (let (families)
+          (dotimes (offset (1- (point-max)))
+            (let ((position (1+ offset)))
+              (unless (memq (char-after position) '(?\n ?\s))
+                (let ((font (font-at position)))
+                  (unless font (error "No rendered font at %s" position))
+                  (cl-pushnew (font-get font :family) families :test #'equal)))))
+          (unless (and families
+                       (cl-every (lambda (family)
+                                   (string-equal (downcase (format "%s" family))
+                                                 "monolisa variable"))
+                                 families))
+            (error "Unexpected rendered font families: %S" families))
+          (with-temp-file (expand-file-name "docs/preview-font.txt" quill-preview-root)
+            (insert "Preview font: MonoLisa Variable, Regular, 12 pt\n"
+                    "Verified with Emacs font-at for every non-space, non-newline\n"
+                    "character in the displayed sample buffer before frame export.\n"
+                    (format "Resolved families: %S\n" families))))
         (unless (w32-export-frame nil (expand-file-name "docs/preview.png" quill-preview-root) 'png)
           (error "Frame export failed"))
         (with-temp-file (expand-file-name ".research/gui-check.txt" quill-preview-root)

@@ -77,7 +77,7 @@ semantics and remaining package faces inherit Modus. This ensures coverage but
 does not make those choices Mickey's settings.
 
 Font, font size, line spacing, cursor shape and window layout are user settings.
-They are deliberately not part of the theme. The package preview uses Consolas;
+They are deliberately not part of the theme. The package preview uses MonoLisa Variable;
 it does not claim that Mickey uses this font.
 
 ## Video evidence

@@ -1,0 +1,4 @@
+Preview font: MonoLisa Variable, Regular, 12 pt
+Verified with Emacs font-at for every non-space, non-newline
+character in the displayed sample buffer before frame export.
+Resolved families: (MonoLisa\ Variable)
