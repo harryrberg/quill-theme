@@ -9,26 +9,13 @@ Org code blocks and their begin/end lines share the black buffer background.
 By default, fringes and inactive mode lines are black, with thin grey separators
 and a line above each mode line. The original Mickey-inspired UI is an alternative.
 
-![Quill showing a Lisp perceptron and all Quill-defined colours in one Emacs window](docs/perceptron-palette-minimal.png)
+![Quill showing a tiny Lisp bytecode virtual machine](docs/bytecode-vm-minimal.png)
 
 Preview font: **MonoLisa Variable**, 12 pt ([render verification](docs/preview-font.txt)).
 The font is not bundled with the theme.
-Example code: [a perceptron learning an AND gate](examples/perceptron.el).
-The labelled swatches beneath the code show all 21 distinct colours defined by
-Quill, including the red cursor colour. They are colour samples, not extra
-syntax highlighting applied to the Lisp code.
-
-<details>
-<summary>Complete palette: all 123 colours, including inherited Modus colours</summary>
-
-![Every distinct colour in Quill's resolved palette](docs/palette.svg)
-
-This chart groups 374 resolved palette names and roles into 123 unique colours.
-It includes colours for diagnostics, diffs, search and other package interfaces.
-The snapshot uses Modus Themes 5.2; inherited colours can change with its version.
-See [the full name-to-colour mapping](docs/palette.json) for every entry.
-
-</details>
+Example code: [a tiny 16-bit stack machine](examples/tiny-vm.el) that computes 42.
+The runnable Lisp demonstrates normal syntax highlighting for constants, variables,
+structures, functions, documentation, strings, comments and bytecode instructions.
 
 The name **Quill** honours Mickey's work as a writer and teacher. This is an
 **unofficial, independently implemented theme**, not Mickey's configuration or
@@ -127,7 +114,7 @@ put them in `init.org` and tangle instead.
 
 ### Mickey-inspired alternative
 
-![Mickey-inspired alternative showing the same Lisp perceptron and colour samples](docs/perceptron-palette-mickey.png)
+![Mickey-inspired alternative showing the same Lisp virtual machine](docs/bytecode-vm-mickey.png)
 
 Turn **Quill Minimal Ui** off in Customize, use `M-x quill-toggle-minimal-ui`,
 or set the option before loading:
@@ -198,10 +185,8 @@ When Emacs bundles Modus 5.2+, omit `-L /path/to/modus-themes`.
 The tests exercise loading/disabling/reloading, palette resolution and overrides,
 upstream palette isolation, face coverage, and package metadata.
 
-`tools/preview.el` creates both single-window perceptron previews in a separate Windows Emacs 31 GUI process
+`tools/preview.el` creates both single-window bytecode VM previews in a separate Windows Emacs 31 GUI process
 using `w32-export-frame`, then exits. It does not load your init file.
-It also exports the resolved palette to `docs/palette.json`;
-`python tools/palette-svg.py` regenerates the complete colour chart from it.
 `tools/research.py` refreshes the local source cache using Python, requests,
 BeautifulSoup4 and Pillow; `tools/render-references.py` renders cached SVGs
 with Playwright and Edge. Downloads stay in ignored `.research/`.
